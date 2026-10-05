@@ -1,0 +1,9 @@
+{
+  "name": "property-site",
+  "private": true,
+  "description": "Scroll-driven 3D property website template. All content lives in site.config.js.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}
