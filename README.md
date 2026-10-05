@@ -16,7 +16,8 @@ The included project, *Oriel Residence*, is fictional and is published in demo m
 
 `https://chryscazales16.github.io/oriel-residence/`
 
-Changes show up there about a minute after you save them.
+Changes show up there about a minute after you save them, while the repository is public
+(see *Private or public* below).
 
 ## One-time setup
 
@@ -24,6 +25,19 @@ Changes show up there about a minute after you save them.
 2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
 
 That's all. From then on, every saved change publishes itself.
+
+## Private or public
+
+On a free GitHub account, the website can only be online while this repository is **public**.
+
+- **While it's private**, nobody else can see the code or the website. Your edits are still
+  checked: each run in the **Actions** tab gets a green ✓ and a note saying the website is offline.
+- **To put the website online:**
+  1. **Settings** → scroll down to **Danger Zone** → **Change visibility** → **Public**.
+  2. **Settings** → **Pages** → set **Source** to **GitHub Actions**.
+  3. **Actions** tab → open the latest run → **Re-run all jobs** (or save any change).
+- In a public repository anyone can read every file, including `site.config.js`. Only put
+  things there that you'd be happy to show on the website itself.
 
 ## Change something from an iPad
 
