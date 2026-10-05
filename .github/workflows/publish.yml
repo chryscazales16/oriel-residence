@@ -23,7 +23,11 @@ jobs:
       - uses: actions/checkout@v5
       - name: Check the settings and build the site
         run: node build.mjs
-      - uses: actions/configure-pages@v6
+      - id: pages
+        uses: actions/configure-pages@v6
+      - name: Explain how to switch on publishing
+        if: failure() && steps.pages.outcome == 'failure'
+        run: echo "::error title=Publishing is switched off::Open Settings, then Pages, and set Source to GitHub Actions. Then come back to this run and tap Re-run all jobs."
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist

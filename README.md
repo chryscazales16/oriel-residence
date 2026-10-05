@@ -53,6 +53,9 @@ good version. Open the **Actions** tab: the failed run has a red ✗, and its me
 to fix (for example *"Residence 07-05: status must be available, reserved or sold"*). Fix the
 line, commit again, and it turns green.
 
+If the message says **Publishing is switched off**, do the one-time setup above, then open
+that run and tap **Re-run all jobs**.
+
 ## Enquiries
 
 - **Email:** the form sends each enquiry to your inbox through [Web3Forms](https://web3forms.com)
